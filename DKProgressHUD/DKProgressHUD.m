@@ -62,7 +62,7 @@
 {
     [self dismissForView:view];
     
-    view = view ? view : [[UIApplication sharedApplication].windows lastObject];
+    view = view ? view : [UIApplication sharedApplication].keyWindow;
     
     DKProgressHUD *hud = [self showHUDAddedTo:view animated:YES];
     hud.bezelView.color = [self backgroundColor];
