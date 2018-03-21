@@ -237,7 +237,7 @@
 
 + (void)dismissForKeyWindow
 {
-    UIView *keyWindow = [[UIApplication sharedApplication].windows lastObject];
+    UIView *keyWindow = [UIApplication sharedApplication].keyWindow;
     [self hideHUDForView:keyWindow animated:YES];
 }
 
